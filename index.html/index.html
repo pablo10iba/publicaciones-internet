@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publicaciones de internet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Publicaciones de internet</h1>
+
+    <h2 id="titulo">Cargando publicación...</h2>
+    <p id="contador"></p>
+    
+<input
+    type="text"
+    id="buscador"
+    placeholder="Buscar publicaciones..."
+>
+<button id="limpiar">Limpiar Busqueda</button>
+
+<label for="filtro-usuario">Filtrar por usuario:</label>
+
+<select id="filtro-usuario">
+    <option value="todos">Todos los usuarios</option>
+    <option value="1">Usuario 1</option>
+    <option value="2">Usuario 2</option>
+    <option value="3">Usuario 3</option>
+    <option value="4">Usuario 4</option>
+    <option value="5">Usuario 5</option>
+    <option value="6">Usuario 6</option>
+    <option value="7">Usuario 7</option>
+    <option value="8">Usuario 8</option>
+    <option value="9">Usuario 9</option>
+    <option value="10">Usuario 10</option>
+</select>
+
+<label for="ordenar">Ordenar publicaciones:</label>
+<select id="ordenar">
+    <option value="original">Orden original</option>
+    <option value="az">Título: A a Z</option>
+    <option value="za">Título: Z a A</option>
+</select>
+
+    <div class="barra-progreso">
+    <div id="progreso"></div>
+</div>
+<p id="contenido">Cargando contenido...</p>
+
+<div id="lista-publicaciones"></div>
+
+<section id="detalles-publicacion" hidden>
+    <h2>Detalles de la publicación</h2>
+    <h3 id="detalle-titulo"></h3>
+    <p id="detalle-contenido"></p>
+    <p id="detalle-usuario"></p>
+    <button id="cerrar-detalles">Cerrar detalles</button>
+</section>
+
+<p id="error"></p>
+<button id="cargar-mas">Cargar más publicaciones</button>
+<script src="script.js"></script>
+</body>
+</html>
